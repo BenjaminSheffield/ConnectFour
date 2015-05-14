@@ -25,10 +25,9 @@ function compare(a,b) {
 }
 
 function renderWinners(scores) {
-    var htmlString = "<li>" +
-                       "<h2>" + scores.name + "</h2>" +
-                       "<h3>" + scores.win_count + "</h3>" +
-                     "</li>";
+    var htmlString = "<tr>" +
+                       "<td>" + scores.name + "</td>" + "<td>" + scores.win_count + "</td>" +
+                     "</tr>";
     $('#winners').append(htmlString);
   }
 
