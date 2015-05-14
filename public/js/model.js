@@ -1,3 +1,5 @@
 $(document).ready(function(){
-	$('div').css("background-color", "blue");
-}
+	$('.column1').click(function(){
+		$('.column1').first().css("background-color","red");
+});
+});
