@@ -1,11 +1,15 @@
+require 'sinatra/json'
 
 get '/api/winners' do
  @data = Winner.all
+ json @data
 end
 
 
 get '/' do
-  redirect '../../../public/index.html'
+  erb :index
 end
 
-post
+
+
+
