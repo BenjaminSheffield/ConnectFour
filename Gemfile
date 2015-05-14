@@ -12,6 +12,7 @@ gem 'activesupport'
 gem 'activerecord'
 
 gem 'rake'
+gem 'json'
 
 gem 'shotgun'
 
