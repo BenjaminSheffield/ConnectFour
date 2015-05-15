@@ -1,26 +1,21 @@
-var playerTurn = 'red';
+var playerTurn = "red";
 $(document).ready(function () {
-    $('.column1').click(doMove);
+    $('.Board').click(function (e) {
+        var myClass = $(e.target).attr("class");
+        console.log(myClass);
+        $('.' + myClass).last().css("background-color", playerTurn).removeClass(myClass).addClass('.' + playerTurn);
+        if (playerTurn == "red") {
+            playerTurn = "yellow"
+        } else {
+            playerTurn = "red"
+        }
+    }
+    );
 }
 );
 
-function doMove() {
-    if (playerTurn == 'red') {
-        playerRed()
-    } else {
-        playerYellow()
-    };
-}
-
-function playerRed() {
-    $('.column1').last().css("background-color", "red").removeClass('column1').addClass('RedClass');
-    playerTurn = 'yellow';
-}
 
 
-function playerYellow() {
 
-    $('.column1').last().css("background-color", "yellow").removeClass('column1').addClass('YellowClass');
-    playerTurn = 'red';
 
-};
+
