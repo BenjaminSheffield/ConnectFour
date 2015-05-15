@@ -80,7 +80,17 @@
 }
 
 .heada {
-	color: red;
+	color: #000000;
+	font-family: 'Lobster', cursive;
+	font-size: 50px;
+	border-radius: 50%;
+	background-color: #FFF;
+
+	margin-right: auto;
+	margin-left: auto;
+	width: 40%;
+	text-align: center;
+
 }
 
 #winners {
@@ -100,12 +110,24 @@
 	background: #CCC
 }
 
+#winners tr:nth-child(odd) {
+	background: #FFF
+}
+
 .wrapper {
 	text-align: center;
 	margin-top: 50px;
 }
 
 #scorebutton {
-	background-color: yellow;
+	background-color: #7BE4E9;
 }
 
+#newgamebutton {
+	background-color: violet;
+}
+
+body {
+	background-image: url("http://www.artfromcode.com/wp-content/uploads/2008/08/dots_01.png");
+	background-size: 151%;
+}
